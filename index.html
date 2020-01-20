@@ -23,15 +23,20 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="images/logo.png">
             </a>
         </div>
-    </nav>
+    </nav> -->
     <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');">
-        <div class="overlay"></div>
+        <div class="logo">
+            <a class="navbar-brand" href="/">
+                <img src="images/logo.png">
+            </a>
+        </div>
+        <!-- <div class="overlay"></div> -->
         <div class="container">
             <div class="row no-gutters slider-text align-items-center">
                 <h3 class="v">Modist - Time to get dress</h3>
@@ -52,40 +57,44 @@
                         <form onsubmit="pushData();return false;" class="register-form" autocomplete="off" id="form">
                             <div class="name">
                                 <div>
-                                    <input class="form-control" type="text" name="Name" placeholder="Name*" aria-label="name" required="">
+                                    <input class="form-control" type="text" name="Name" placeholder="Name*" aria-label="name" required="true">
                                 </div>
                             </div>
                             <div>
-                                <input class="form-control" type="email" name="Email" placeholder="Email*" aria-label="email" required="">
+                                <input class="form-control" type="email" name="Email" placeholder="Email*" aria-label="email" required="true">
                             </div>
                             <div>
-                                <input class="form-control" type="tel" name="Phone" placeholder="Contact Number*" aria-label="number" required="">
+                                <input class="form-control" type="tel" name="Phone" placeholder="Contact Number*" aria-label="phone" required="">
                             </div>
                             <div>
-                               
-                                    <select class="dropdown form-control" name="Requirements" required="true" id="requirements" style="display: none;">
-                                        <option value="">Requirement</option>
-                                        <option value="Trophies">Trophies</option>
-                                        <option value="Certificates">Certificates</option>
-                                        <option value="Momentos">Momentos</option>
-                             
-                                    </select>
-                                    
-                               
+                                <select class="form-control" name="Requirement" required="true">
+                                    <option value="">Requirement*</option>
+                                    <option value="Trophies">Trophies</option>
+                                    <option value="Certificates">Certificates</option>
+                                    <option value="Momentos">Momentos</option>
+                                </select>
                             </div>
                             <div>
-                                <input class="form-control" type="text" name="units" placeholder="No. of units*" aria-label="organization" required="">
+                                <select class="form-control" name="size" required="true">
+                                    <option value="">Size*</option>
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                </select>
                             </div>
                             <div>
-                                <input class="form-control" type="text" name="Budget" placeholder="Budget*" aria-label="budget" required="">
+                                <input class="form-control" type="number" name="units" placeholder="No. of units*" aria-label="units" required="true">
                             </div>
                             <div>
-                                <input class="form-control" type="text" name="comment" placeholder="Any other comments" aria-label="comment" required="true">
+                                <input class="form-control" type="number" name="Budget" placeholder="Budget*" aria-label="budget" required="true">
+                            </div>
+                            <div>
+                                <input class="form-control" type="text" name="comment" placeholder="Any other comments" aria-label="comment">
                             </div>
                             <input type="hidden" name="platform" id="platform">
                             <input type="hidden" name="source" id="source">
                             <div>
-                                <button type="submit" class="button background-60-d heading-d">Submit</button>
+                                <button type="submit" class="button">Submit</button>
                             </div>
                         </form>
                         <div id="form-message" style="display: none;">
@@ -120,20 +129,8 @@
                                 </a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -142,20 +139,8 @@
                                 <a href="#" class="img-prod"><img class="img-fluid" src="images/product-2.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -164,20 +149,7 @@
                                 <a href="#" class="img-prod"><img class="img-fluid" src="images/product-3.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -186,20 +158,7 @@
                                 <a href="#" class="img-prod"><img class="img-fluid" src="images/product-4.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                   <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -210,20 +169,7 @@
                                 </a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -232,20 +178,7 @@
                                 <a href="#" class="img-prod"><img src="images/product-6.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -254,67 +187,10 @@
                                 <a href="#" class="img-prod"><img src="images/product-6.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
                                 </div>
                             </div>
                         </div>
-                        <!--  <div class="item">
-                            <div class="product">
-                                <a href="#" class="img-prod"><img src="images/product-6.jpg" alt="Colorlib Template"></a>
-                                <div class="text pt-3 px-3">
-                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="product">
-                                <a href="#" class="img-prod"><img src="images/product-6.jpg" alt="Colorlib Template"></a>
-                                <div class="text pt-3 px-3">
-                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -342,7 +218,7 @@
             </div>
         </div>
     </section>
-    <section class="ftco-section bg-light">
+   <section class="ftco-section ftco-product bg-light">
         <div class="container">
             <div class="row justify-content-center mb-3 pb-3">
                 <div class="col-md-12 heading-section text-center ftco-animate">
@@ -350,224 +226,75 @@
                     <h2 class="mb-4">Certificates</h2>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="product-slider owl-carousel ftco-animate">
-                        <div class="col-sm col-md-6 col-lg ftco-animate">
+                        <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/product-1.jpg" alt="Colorlib Template"></a>
-                                <div class="text py-3 px-3">
+                                <a href="#" class="img-prod"><img class="img-fluid" src="images/product-1.jpg" alt="Colorlib Template">
+                                    <span class="status">30%</span>
+                                </a>
+                                <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <p class="bottom-area d-flex">
-                                        <a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
-                                        <a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
-                                    </p>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                    
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm col-md-6 col-lg ftco-animate">
+                        <div class="item">
                             <div class="product">
                                 <a href="#" class="img-prod"><img class="img-fluid" src="images/product-2.jpg" alt="Colorlib Template"></a>
-                                <div class="text py-3 px-3">
+                                <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <p class="bottom-area d-flex">
-                                        <a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
-                                        <a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
-                                    </p>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                    
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm col-md-6 col-lg ftco-animate">
+                        <div class="item">
                             <div class="product">
                                 <a href="#" class="img-prod"><img class="img-fluid" src="images/product-3.jpg" alt="Colorlib Template"></a>
-                                <div class="text py-3 px-3">
+                                <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <p class="bottom-area d-flex">
-                                        <a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
-                                        <a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
-                                    </p>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm col-md-6 col-lg ftco-animate">
+                        <div class="item">
                             <div class="product">
                                 <a href="#" class="img-prod"><img class="img-fluid" src="images/product-4.jpg" alt="Colorlib Template"></a>
-                                <div class="text py-3 px-3">
+                                <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <p class="bottom-area d-flex">
-                                        <a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
-                                        <a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
-                                    </p>
+                                   <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm col-md-6 col-lg ftco-animate">
+                        <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/product-3.jpg" alt="Colorlib Template"></a>
-                                <div class="text py-3 px-3">
+                                <a href="#" class="img-prod"><img src="images/product-5.jpg" alt="Colorlib Template">
+                                    <span class="status">30%</span>
+                                </a>
+                                <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <p class="bottom-area d-flex">
-                                        <a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
-                                        <a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
-                                    </p>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm col-md-6 col-lg ftco-animate">
+                        <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/product-4.jpg" alt="Colorlib Template"></a>
-                                <div class="text py-3 px-3">
+                                <a href="#" class="img-prod"><img src="images/product-6.jpg" alt="Colorlib Template"></a>
+                                <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <p class="bottom-area d-flex">
-                                        <a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
-                                        <a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
-                                    </p>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm col-md-6 col-lg ftco-animate">
+                        <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/product-3.jpg" alt="Colorlib Template"></a>
-                                <div class="text py-3 px-3">
+                                <a href="#" class="img-prod"><img src="images/product-6.jpg" alt="Colorlib Template"></a>
+                                <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <p class="bottom-area d-flex">
-                                        <a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
-                                        <a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm col-md-6 col-lg ftco-animate">
-                            <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/product-4.jpg" alt="Colorlib Template"></a>
-                                <div class="text py-3 px-3">
-                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <p class="bottom-area d-flex">
-                                        <a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
-                                        <a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
-                                    </p>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -594,20 +321,8 @@
                                 </a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -616,20 +331,8 @@
                                 <a href="#" class="img-prod"><img class="img-fluid" src="images/product-2.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -638,20 +341,7 @@
                                 <a href="#" class="img-prod"><img class="img-fluid" src="images/product-3.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -660,20 +350,7 @@
                                 <a href="#" class="img-prod"><img class="img-fluid" src="images/product-4.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                   <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -684,20 +361,7 @@
                                 </a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -706,20 +370,7 @@
                                 <a href="#" class="img-prod"><img src="images/product-6.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -728,20 +379,177 @@
                                 <a href="#" class="img-prod"><img src="images/product-6.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Young Woman Wearing Dress</a></h3>
-                                    <div class="d-flex">
-                                        <div class="pricing">
-                                            <p class="price"><span>$120.00</span></p>
-                                        </div>
-                                        <div class="rating">
-                                            <p class="text-right">
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                                <span class="ion-ios-star-outline"></span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section ftco-product bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-3 pb-3">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <h1 class="big">Wall Art</h1>
+                    <h2 class="mb-4">Wall Art</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-slider owl-carousel ftco-animate">
+                        <div class="item">
+                            <div class="product">
+                                <a href="#" class="img-prod"><img class="img-fluid" src="images/product-1.jpg" alt="Colorlib Template">
+                                    <span class="status">30%</span>
+                                </a>
+                                <div class="text pt-3 px-3">
+                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <a href="#" class="img-prod"><img class="img-fluid" src="images/product-2.jpg" alt="Colorlib Template"></a>
+                                <div class="text pt-3 px-3">
+                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <a href="#" class="img-prod"><img class="img-fluid" src="images/product-3.jpg" alt="Colorlib Template"></a>
+                                <div class="text pt-3 px-3">
+                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <a href="#" class="img-prod"><img class="img-fluid" src="images/product-4.jpg" alt="Colorlib Template"></a>
+                                <div class="text pt-3 px-3">
+                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
+                                   <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <a href="#" class="img-prod"><img src="images/product-5.jpg" alt="Colorlib Template">
+                                    <span class="status">30%</span>
+                                </a>
+                                <div class="text pt-3 px-3">
+                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <a href="#" class="img-prod"><img src="images/product-6.jpg" alt="Colorlib Template"></a>
+                                <div class="text pt-3 px-3">
+                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <a href="#" class="img-prod"><img src="images/product-6.jpg" alt="Colorlib Template"></a>
+                                <div class="text pt-3 px-3">
+                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section ftco-product">
+        <div class="container">
+            <div class="row justify-content-center mb-3 pb-3">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <h1 class="big">Wall Clocks</h1>
+                    <h2 class="mb-4">Wall Clocks</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-slider owl-carousel ftco-animate">
+                        <div class="item">
+                            <div class="product">
+                                <a href="#" class="img-prod"><img class="img-fluid" src="images/product-1.jpg" alt="Colorlib Template">
+                                    <span class="status">30%</span>
+                                </a>
+                                <div class="text pt-3 px-3">
+                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <a href="#" class="img-prod"><img class="img-fluid" src="images/product-2.jpg" alt="Colorlib Template"></a>
+                                <div class="text pt-3 px-3">
+                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <a href="#" class="img-prod"><img class="img-fluid" src="images/product-3.jpg" alt="Colorlib Template"></a>
+                                <div class="text pt-3 px-3">
+                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <a href="#" class="img-prod"><img class="img-fluid" src="images/product-4.jpg" alt="Colorlib Template"></a>
+                                <div class="text pt-3 px-3">
+                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
+                                   <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <a href="#" class="img-prod"><img src="images/product-5.jpg" alt="Colorlib Template">
+                                    <span class="status">30%</span>
+                                </a>
+                                <div class="text pt-3 px-3">
+                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <a href="#" class="img-prod"><img src="images/product-6.jpg" alt="Colorlib Template"></a>
+                                <div class="text pt-3 px-3">
+                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <a href="#" class="img-prod"><img src="images/product-6.jpg" alt="Colorlib Template"></a>
+                                <div class="text pt-3 px-3">
+                                    <h3><a href="#">Young Woman Wearing Dress</a></h3>
+                                    <a href="#" class="add-to-cart"><span>Order Now<i class="ion-ios-add ml-1"></i></span></a>
                                 </div>
                             </div>
                         </div>
