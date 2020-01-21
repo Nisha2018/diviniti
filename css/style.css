@@ -11366,6 +11366,11 @@ h5,
     color: #000
 }
 
+.process img{
+    width: 100%;
+    height: auto;
+}
+
 .product .text p.price {
     margin-bottom: 0;
     color: #000;
