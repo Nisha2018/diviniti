@@ -13254,12 +13254,13 @@ ul{
     align-self: center;
     justify-self: center;
     font-size: 30px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     background: #ffbe2a;
+    border: 3px solid #222;
     border-radius: 50%;
     color: #222;
-    font-weight: bold;
-    font-family: 'Bowlby One SC', cursive;
+    font-weight: 900;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 @media screen and (min-width: 992px){
