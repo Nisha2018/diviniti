@@ -10880,17 +10880,12 @@ h5,
     }
 }
 
-@media screen and (min-width: 991px){
+@media screen and (min-width: 768px){
     .hero-wrap{
     background-image: url('../images/banner3.png');
     }
 }
 
-@media screen and (max-width: 767px){
-    .hero-wrap{
-    background-image: url('../images/portrait_banner.png');
-    }
-}
 
 .hero-wrap .slider-text h2 {
     font-size: 20px;
@@ -11231,6 +11226,13 @@ h5,
 
     .hero-wrap .form-area{
         margin-left: 0px;
+        position: relative;
+        top: 380px;
+    }
+
+    .hero-wrap{
+    background-image: url('../images/portrait.png');
+    height: 1240px;
     }
 }
 
