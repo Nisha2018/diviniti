@@ -22,13 +22,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PF4WX7F');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF4WX7F" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="hero-wrap" id="hero-wrap">
         <div class="logo">
             <a class="navbar-brand" href="/">
-                <img src="images/logo.png">
+                <img src="/images/logo.png">
             </a>
         </div>
         <div class="container">
@@ -47,7 +57,7 @@
                                 <input class="form-control" type="email" id="email" name="Email" placeholder="Email*" aria-label="email" required="true">
                             </div>
                             <div>
-                                <input class="form-control" type="tel" id="phone_number" name="Phone" placeholder="Contact Number*" aria-label="phone" required="">
+                                <input class="form-control" type="text" pattern="[0-9]{7,24}$" title="Phone number should be between 7 to 24" id="phone_number" name="Phone" placeholder="Contact Number*" aria-label="phone" required="">
                             </div>
                             <div>
                                 <select class="form-control" id="requirement" name="Requirement" required="true">
@@ -66,10 +76,10 @@
                                 </select>
                             </div>
                             <div>
-                                <input class="form-control" type="number" id="units" name="units" placeholder="No. of units*" aria-label="units" required="true">
+                                <input class="form-control" type="text" id="units" name="units" title="Please enter number of units greater than 0" placeholder="No. of units*" pattern="^([0-9]*[1-9][0-9]*(\.[0-9]+)?|[0]+\.[0-9]*[1-9][0-9]*)$" aria-label="units" required="true">
                             </div>
                             <div>
-                                <input class="form-control" type="number" id="budget" name="Budget" placeholder="Budget*" aria-label="budget" required="true">
+                                <input class="form-control" type="text" id="budget" name="Budget" title="Please enter budget in dollar($) greater than 0" pattern="^([0-9]*[1-9][0-9]*(\.[0-9]+)?|[0]+\.[0-9]*[1-9][0-9]*)$" placeholder="Budget*" aria-label="budget" required="true">
                             </div>
                             <div>
                                 <input class="form-control" type="text" id="comment" name="comment" placeholder="Any other comments" aria-label="comment">
@@ -113,7 +123,7 @@
                     <div class="product-slider owl-carousel ftco-animate">
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/wallart/wallart1.jpg" alt="Colorlib Template">
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/wallart/wallart1.jpg" alt="Colorlib Template">
                                 </a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Wall Hanging DG Tree of Life</a></h3>
@@ -126,7 +136,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/wallart/wallart2.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/wallart/wallart2.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">DG Frame Swan Wall Art</a></h3>
                                     <!-- <a href="#" class="add-to-cart"><span>Buy Now<i class="ion-ios-add ml-1"></i></span>
@@ -140,7 +150,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/wallart/wallart3.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/wallart/wallart3.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">DG Frame Wall Art</a></h3>
                                     <div class="add-to-cart">
@@ -152,7 +162,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/wallart/wallart4.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/wallart/wallart4.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">DG Frame Classic Gold Ganesha</a></h3>
                                     <div class="add-to-cart">
@@ -164,7 +174,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img src="images/wallart/wallart5.jpg" alt="Colorlib Template">
+                                <a href="#" class="img-prod"><img src="/images/wallart/wallart5.jpg" alt="Colorlib Template">
                                 </a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">DG Frame Marriage Photo</a></h3>
@@ -177,7 +187,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img src="images/wallart/wallart6.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img src="/images/wallart/wallart6.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">DG Frame Classic Rectangular Taj Mahal</a></h3>
                                     <div class="add-to-cart">
@@ -195,9 +205,9 @@
     <section class="ftco-section ftco-no-pb ftco-no-pt bg-light process">
         <div class="container-fluid">
             <div class="img-container">
-                <div class="one"><img src="images/goldplating.png"></div>
+                <div class="one"><img src="/images/goldplating.png"></div>
                 <div class="text">Vs</div>
-                <div class="two"><img src="images/goldcladding.png"></div>
+                <div class="two"><img src="/images/goldcladding.png"></div>
             </div>
             <div class="process-text">
                 <p>We deliver products with a difference.
@@ -219,7 +229,7 @@
                     <div class="product-slider owl-carousel ftco-animate">
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/certificates/certificate1.jpg" alt="Colorlib Template">
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/certificates/certificate1.jpg" alt="Colorlib Template">
                                 </a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">DG Golden University Certificate</a></h3>
@@ -232,7 +242,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/certificates/certificate2.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/certificates/certificate2.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">MDF Frame ISRM Certificate</a></h3>
                                     <div class="add-to-cart">
@@ -244,7 +254,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/certificates/certificate3.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/certificates/certificate3.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">DG Golden University Certificate</a></h3>
                                     <div class="add-to-cart">
@@ -256,7 +266,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/certificates/certificate4.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/certificates/certificate4.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">DG Brown Frame Certificate </a></h3>
                                     <div class="add-to-cart">
@@ -268,7 +278,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img src="images/certificates/certificate5.jpg" alt="Colorlib Template">
+                                <a href="#" class="img-prod"><img src="/images/certificates/certificate5.jpg" alt="Colorlib Template">
                                 </a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">MDF Frame Kohler Certificate</a></h3>
@@ -281,7 +291,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img src="images/certificates/certificate6.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img src="/images/certificates/certificate6.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">MDF Appreciation Certificate</a></h3>
                                     <div class="add-to-cart">
@@ -309,7 +319,7 @@
                     <div class="product-slider owl-carousel ftco-animate">
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/carframes/carframes1.jpg" alt="Colorlib Template">
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/carframes/carframes1.jpg" alt="Colorlib Template">
                                 </a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">ACF Classic Square Ganesha</a></h3>
@@ -322,7 +332,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/carframes/carframes2.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/carframes/carframes2.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">MDF Classic Square Vishvakarma</a></h3>
                                     <div class="add-to-cart">
@@ -334,7 +344,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/carframes/carframes3.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/carframes/carframes3.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">ACF Classic Square Sai Baba</a></h3>
                                     <div class="add-to-cart">
@@ -346,7 +356,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/carframes/carframes4.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/carframes/carframes4.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Ceramic Ganesha</a></h3>
                                     <div class="add-to-cart">
@@ -358,7 +368,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img src="images/carframes/carframes5.jpg" alt="Colorlib Template">
+                                <a href="#" class="img-prod"><img src="/images/carframes/carframes5.jpg" alt="Colorlib Template">
                                 </a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">WPCF Classic Circular Shiv Ji</a></h3>
@@ -371,7 +381,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img src="images/carframes/carframes6.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img src="/images/carframes/carframes6.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">MCF Classic Circular Ram Ji</a></h3>
                                     <div class="add-to-cart">
@@ -399,7 +409,7 @@
                     <div class="product-slider owl-carousel ftco-animate">
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/wallclocks/wallclock1.jpg" alt="Colorlib Template">
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/wallclocks/wallclock1.jpg" alt="Colorlib Template">
                                 </a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Wall Clock Brown Round Numeric Sun</a></h3>
@@ -412,7 +422,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/wallclocks/wallclock2.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/wallclocks/wallclock2.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Wall Clock Brown Round Numeric</a></h3>
                                     <div class="add-to-cart">
@@ -424,7 +434,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/wallclocks/wallclock3.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/wallclocks/wallclock3.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Wall Clock Silver Round Numeric</a></h3>
                                     <div class="add-to-cart">
@@ -436,7 +446,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/wallclocks/wallclock4.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/wallclocks/wallclock4.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Wall Clock Gold Round Numeric</a></h3>
                                     <div class="add-to-cart">
@@ -448,7 +458,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img src="images/wallclocks/wallclock5.jpg" alt="Colorlib Template">
+                                <a href="#" class="img-prod"><img src="/images/wallclocks/wallclock5.jpg" alt="Colorlib Template">
                                 </a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Wall Clock Brown Round Numeric Tree of Life</a></h3>
@@ -461,7 +471,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img src="images/wallclocks/wallclock6.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img src="/images/wallclocks/wallclock6.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">Wall Clock Brown Round Designer Numeric</a></h3>
                                     <div class="add-to-cart">
@@ -489,7 +499,7 @@
                     <div class="product-slider owl-carousel ftco-animate">
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/trophies/trophies1.jpg" alt="Colorlib Template">
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/trophies/trophies1.jpg" alt="Colorlib Template">
                                 </a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">MDF Trophy ISSH</a></h3>
@@ -502,7 +512,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/trophies/trophies2.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/trophies/trophies2.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">MDF Trophy Golf Tournament</a></h3>
                                     <div class="add-to-cart">
@@ -514,7 +524,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/trophies/trophies3.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/trophies/trophies3.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">MDG Trophy AWS Tournament</a></h3>
                                     <div class="add-to-cart">
@@ -526,7 +536,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid" src="images/trophies/trophies4.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img class="img-fluid" src="/images/trophies/trophies4.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">MDF Round Trophy </a></h3>
                                     <div class="add-to-cart">
@@ -538,7 +548,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img src="images/trophies/trophies5.jpg" alt="Colorlib Template">
+                                <a href="#" class="img-prod"><img src="/images/trophies/trophies5.jpg" alt="Colorlib Template">
                                 </a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">MDF Trophy Indian Aviation Academy</a></h3>
@@ -551,7 +561,7 @@
                         </div>
                         <div class="item">
                             <div class="product">
-                                <a href="#" class="img-prod"><img src="images/trophies/trophies6.jpg" alt="Colorlib Template"></a>
+                                <a href="#" class="img-prod"><img src="/images/trophies/trophies6.jpg" alt="Colorlib Template"></a>
                                 <div class="text pt-3 px-3">
                                     <h3><a href="#">MDF Round Trophy</a></h3>
                                     <div class="add-to-cart">
@@ -666,7 +676,7 @@
                             </div>
                             <div class="col-md-6 col-lg-3">
                                 <a href="https://www.diviniti.com/" target="_blank">
-                                    <img src="images/logo.png" class="footer-logo" alt="facebook like"></a>
+                                    <img src="/images/logo.png" class="footer-logo" alt="facebook like"></a>
                             </div>
                         </div>
                         <div class="row">
@@ -733,55 +743,63 @@
 
 
         let formdata = new FormData();
+        let params = "";
 
         if (name) {
             formdata.append('Name', name);
+            params = params + "Name=" + name + "&";
         }
 
         if (email) {
             formdata.append('Email', email);
+            params = params + "Email=" + email + "&";
         }
 
         if (phone) {
             formdata.append('Phone', phone);
+            params = params + "Phone=" + phone + "&";
         }
 
         if (requirement) {
             formdata.append('Requirement', requirement);
+            params = params + "Requirement=" + requirement + "&";
         }
 
-         if (size) {
+        if (size) {
             formdata.append('Size', size);
+            params = params + "Size=" + size + "&";
         }
 
         if (units) {
             formdata.append('Units', units);
+            params = params + "Units=" + units + "&";
         }
 
         if (budget) {
-            formdata.append('budget', budget);
+            formdata.append('Budget', budget);
+            params = params + "Budget=" + budget + "&";
         }
 
         if (comment) {
-            formdata.append('comment', comment);
+            formdata.append('Comment', comment);
+            params = params + "Comment=" + comment + "&";
         }
 
         if (source) {
-            temp['Source'] = source;
+            params = params + "Source=" + source + "&";
         }
 
         if (geo) {
-
-            temp['Geo'] = geo;
+            params = params + "Geo=" + geo + "&";
         }
 
         let url_string = window.location.href;
         var durl = new URL(url_string);
         var content = durl.searchParams.get("utm_content");
         if (content) {
-            // url = url + 'Source=' + content + '&';
+
             formdata.append('Source', content);
-            temp['Source'] = content;
+            params = params + "Source=" + content + "&";
         }
         console.log(formdata.values());
         for (let value of formdata.values()) {
@@ -792,15 +810,14 @@
                 callback(xmlHttp.responseText);
         }
 
-        xmlHttp.open("POST", url, true); // true for asynchronous
-        xmlHttp.setRequestHeader('Content-Type', 'multipart/form-data')
-        xmlHttp.send(JSON.stringify(formdata));
+        xmlHttp.open("GET", url + encodeURI(params), true); // true for asynchronous
+        xmlHttp.send();
     }
 
 
     function sendGET() {
 
-        httpGetAsync('https://enquiry.aqugen.com/enquiry', function(data) {
+        httpGetAsync('https://script.google.com/macros/s/AKfycbyUj-ezLopiWqBdR4TDvlZZkBgBn3GyGgoytJQi9F3NLmXqkJul/exec', function(data) {
             console.log(data);
             let form = document.getElementById('formarea');
             let message = document.getElementById('form-message');
