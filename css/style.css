@@ -10957,6 +10957,10 @@ h5,
     color: #000
 }
 
+#form-message{
+    opacity: 1;
+}
+
 .hero-wrap.hero-bread {
     padding: 7em 0
 }
@@ -10965,7 +10969,7 @@ h5,
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 8em;
+    bottom: -1em;
     z-index: 99
 }
 
@@ -12179,6 +12183,10 @@ textarea.form-control {
     overflow-x: hidden;
 }
 
+#hero-wrap{
+    overflow: hidden;
+}
+
 .ftco-services .services {
     display: block;
     width: 100%;
@@ -13296,6 +13304,43 @@ ul {
     display: grid;
     grid-template-rows: 3fr 1fr;
 }
+
+
+/*form starts*/
+.hero-wrap .container .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    z-index: 11;
+}
+
+.hero-wrap .container .overlay .popupText {
+    position: relative;
+    background: white;
+    color: black;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.hero-wrap .container .overlay .close {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    font-size: 30px;
+    color: red;
+    cursor: pointer;
+}
+
+/*form ends*/
 
 @media screen and (min-width: 992px) {
     .hero-wrap .logo {
