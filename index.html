@@ -62,8 +62,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <div>
                                 <select class="form-control" id="requirement" name="Requirement" required="true">
                                     <option value="">Requirement*</option>
-                                    <option value="Trophies">Trophies</option>
+                                    <option value="Trophies">Wall Art</option>
                                     <option value="Certificates">Certificates</option>
+                                    <option value="Trophies">Car Frames</option>
+                                    <option value="Certificates">Wall Clocks</option>
+                                    <option value="Trophies">Trophies</option>
                                     <option value="Momentos">Momentos</option>
                                 </select>
                             </div>
@@ -806,8 +809,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             console.log(value);
         }
         xmlHttp.onreadystatechange = function() {
-            if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-                callback(xmlHttp.responseText);
+            // if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            callback(xmlHttp.responseText);
         }
 
         xmlHttp.open("GET", url + encodeURI(params), true); // true for asynchronous
