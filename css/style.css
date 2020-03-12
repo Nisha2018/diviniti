@@ -10957,7 +10957,7 @@ h5,
     color: #000
 }
 
-#form-message{
+#form-message {
     opacity: 1;
 }
 
@@ -12183,7 +12183,7 @@ textarea.form-control {
     overflow-x: hidden;
 }
 
-#hero-wrap{
+#hero-wrap {
     overflow: hidden;
 }
 
@@ -13350,5 +13350,9 @@ ul {
     .img-container {
         grid-template-columns: 1fr auto 1fr;
         grid-template-rows: auto;
+    }
+
+    .col-half-offset {
+        margin-left: 3.166666667%;
     }
 }
